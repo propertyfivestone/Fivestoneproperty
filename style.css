@@ -198,8 +198,7 @@ img {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +209,7 @@ img {
     background-position: center;
     background-attachment: fixed;
     color: var(--color-white);
-    padding-top: 80px;
+    padding: 120px 0 60px;
 }
 
 .hero-overlay {
@@ -248,6 +247,114 @@ img {
     gap: var(--spacing-sm);
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: var(--spacing-md);
+}
+
+/* Offer Section Styles */
+.offer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tagline-container {
+    margin-bottom: var(--spacing-lg);
+}
+
+.tagline-container h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+.tagline-container p {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.offer-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--color-white);
+    margin-bottom: 0.25rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.offer-badge {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 0.4rem 1.5rem;
+    font-weight: 800;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    border-radius: var(--radius-sm);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
+    display: inline-block;
+}
+
+.offer-visual {
+    position: relative;
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto 1.5rem;
+}
+
+.offer-img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.offer-contact-info {
+    text-align: center;
+}
+
+.offer-website {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--color-white);
+    opacity: 0.9;
+}
+
+.offer-phone {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.wa-icon {
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .offer-title {
+        font-size: 2rem;
+    }
+
+    .offer-badge {
+        font-size: 1.1rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    .offer-website {
+        font-size: 1.1rem;
+    }
+
+    .offer-phone {
+        font-size: 1.4rem;
+    }
 }
 
 /* Section Common */
@@ -556,5 +663,4 @@ img {
 
 .btn-text:hover {
     color: var(--color-primary-dark);
-
 }
